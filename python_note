@@ -1,0 +1,17 @@
+一、
+
+  1. 1 == 1.0， True == 1都是真值
+
+二、list 
+
+  1. list中，-1表示倒数第1个元素，-2表示倒数第2个
+  2. list的方法:
+
+L.append(var)追加元素
+L.count(var) 计算var 在L中出现的次数
+len(L) 返回L的长度
+L.extend(list) 将list追加在L后面
+L.index(var) 返回var在L中的位置，若无则抛出异常
+L.insert(index, var) 在index处插入var，其余元素向后推,如果indes大于list的长度则添加在最后，如index < 0, 添加在开始处
+L.pop()弹出(返回并删除)最后一个元素
+L.pot(index)弹出(返回并删除)index处的元素
