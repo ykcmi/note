@@ -15,3 +15,30 @@ L.index(var) 返回var在L中的位置，若无则抛出异常
 L.insert(index, var) 在index处插入var，其余元素向后推,如果indes大于list的长度则添加在最后，如index < 0, 添加在开始处
 L.pop()弹出(返回并删除)最后一个元素
 L.pot(index)弹出(返回并删除)index处的元素
+L.remove(var) 删除var，若无，抛出异常
+L.reverse() 倒序
+L.sort() 排序
+L.sort(func) 用func作为比较函数，进行排序
+
+
+  3. 字符串操作
+
+s.capitalize() 首字母大写
+s.lower() 全部变成小写
+s.upper() 全部变成大写
+s.swapcase() 大小写互换
+len(s) 返回字符串长度
+
+  字符串判断
+
+s.isalnum()
+s.isalpha()
+s.isdigit()
+s.islower()
+s.isupper()
+s.istitle() 所有单词都是首字母大小，像个title
+s.isspace()  判断空白字符 \n, \t, \r
+
+s.strip() 去掉两边的空白字符
+s.lstrip()
+s.rstrip()
