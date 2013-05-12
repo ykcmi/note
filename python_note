@@ -42,3 +42,24 @@ s.isspace()  判断空白字符 \n, \t, \r
 s.strip() 去掉两边的空白字符
 s.lstrip()
 s.rstrip()
+
+
+  4. 每个函数对象都有一个__doc__的属性，函数语句中，
+如果第一个表达式是一个string， 这个函数的__doc__就是这个string，否则__doc__就是None。
+
+print "".join.__doc__
+print range.__doc__
+print [].extend.__doc__
+
+
+  5.可以认为lambda函数就是一种简单的匿名函数
+>>> f = lambda a, b: a + b
+>>> f(1, 2)
+3
+>>> f('abc', 'def')
+'abcdef'
+>>>
+f等价于def f(a, b): return a + b
+
+  6.
+
