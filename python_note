@@ -81,4 +81,24 @@ printf("ok", one = 1, two = 2, three = 3)
   调用函数时，要指明参数的名字，one = 1, two = 2, three = 3，
   函数中可以用dictionary的方式来操作arg， 其中keys 是["one", "two", "three"], values是[1, 2, 3]。
   
-  8.
+  8. 
+  创建attribute的方法：
+  obj.new_attribute = other
+  或者
+  setattr(obj, "new_attribute", other)
+  
+  删除一个attribute的方法：
+  del obj.old_attribute
+  或者
+  delattr(obj, "old_attribute")
+  
+  查询一个attribute：
+  hasattr(obj, "new_attribute")
+
+  得到所有attribute的方法：
+  dir(obj)
+  
+  得到一个object的name space的方法是vars(obj), 得到一个object所有的attribute的方法是dir(obj)
+  
+  
+  
