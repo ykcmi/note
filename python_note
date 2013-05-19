@@ -63,5 +63,22 @@ f等价于def f(a, b): return a + b
 
   6.查找module, python在sys.path中的所有目录中查找module.
 
-  7.
+  7.可变参数：
+  
+  def printf(format, *arg) 其中*arg必须是最后一个参数， *表示接受任意多个参数，
+  除了第一个参数format，多余的参数都作为一个tuple传递给函数printf，可以通过arg来访问
 
+  def printf(format, **arg) 参数按照dictionary的方式传递给函数，接受任意多个参数。
+  **arg表示接受任意个数有有名字的参数传递。如：
+  
+def printf(format, **arg):
+  for k in arg.keys():
+    print "keyword [%s] is %s" % (k, arg[k])
+
+printf("ok", one = 1, two = 2, three = 3)
+
+  
+  调用函数时，要指明参数的名字，one = 1, two = 2, three = 3，
+  函数中可以用dictionary的方式来操作arg， 其中keys 是["one", "two", "three"], values是[1, 2, 3]。
+  
+  8.
